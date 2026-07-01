@@ -1,0 +1,174 @@
+{"kind":"deck","id":"pr/e6tti2","name":"Deck"}
+{"kind":"layout","layoutId":"1ff7d407-5f4c-4b32-b761-9ef3ca78cad5","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"87f4c9b2-6656-4fe7-993f-685c9cc4b50f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/op4rji","slide":1,"title":"Skin Cancer Detection","textShapes":6}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":1,"text":"Skin Cancer Detection","textPreview":"Skin Cancer Detection","textChars":21,"textLines":1,"bbox":[70,92,890,84]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":1,"text":"Using Deep Learning and Explainable AI","textPreview":"Using Deep Learning and Explainable AI","textChars":38,"textLines":1,"bbox":[72,178,940,58]}
+{"kind":"textbox","id":"sh/83itgfml","slide":1,"text":"HAM10000 | PyTorch | EfficientNet | ViT | Grad-CAM | Streamlit","textPreview":"HAM10000 | PyTorch | EfficientNet | ViT | Grad-CAM | Streamlit","textChars":62,"textLines":1,"bbox":[74,290,660,44]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":1,"bbox":[72,380,540,118]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":1,"text":"End-to-end application","textPreview":"End-to-end application","textChars":22,"textLines":1,"bbox":[100,410,480,34]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":1,"text":"From dataset loading to a working web app with prediction heatmaps.","textPreview":"From dataset loading to a working web app with prediction heatmaps.","textChars":67,"textLines":1,"bbox":[100,452,460,54]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":1,"text":"HAM10000 Deep Learning Project | 01","textPreview":"HAM10000 Deep Learning Project | 01","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"image","id":"im/tovahoza","slide":1,"name":"","alt":"Dermoscopic lesion sample","bbox":[780,92,380,380]}
+{"kind":"notes","id":"nt/op4rji","slide":1,"text":""}
+{"kind":"slide","id":"sl/6j5tat","slide":2,"title":"SKIN CANCER DETECTION + XAI","textShapes":7}
+{"kind":"textbox","id":"sh/q1orytsv","slide":2,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":2,"text":"Project objective","textPreview":"Project objective","textChars":17,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/87ed8bat","slide":2,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":2,"text":"Build a complete pipeline that can classify dermoscopic lesion images and explain the visual evidence behind each prediction.","textPreview":"Build a complete pipeline that can classify dermoscopic lesion images and explain the visual evidence behind each prediction.","textChars":125,"textLines":1,"bbox":[64,208,1020,82]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":2,"text":"- Use HAM10000 as the supervised image dataset.\n- Compare a CNN baseline against a Vision Transformer.\n- Evaluate with medical-ML-friendly metrics, not accuracy alone.\n- Expose predictions through a Streamlit app with Grad-CAM evidence.","textPreview":"- Use HAM10000 as the supervised image dataset. | - Compare a CNN baseline against a Vision Transformer. | - Evaluate with medical-ML-fri...","textChars":236,"textLines":4,"bbox":[90,340,900,190]}
+{"kind":"shape","id":"sh/1gvy90je","slide":2,"bbox":[1010,232,170,230]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":2,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1050,258,100,70]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":2,"text":"diagnostic classes","textPreview":"diagnostic classes","textChars":18,"textLines":1,"bbox":[1030,340,130,70]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":2,"text":"HAM10000 Deep Learning Project | 02","textPreview":"HAM10000 Deep Learning Project | 02","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"notes","id":"nt/6j5tat","slide":2,"text":""}
+{"kind":"slide","id":"sl/2z8dbd","slide":3,"title":"SKIN CANCER DETECTION + XAI","textShapes":18}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":3,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":3,"text":"Dataset: HAM10000","textPreview":"Dataset: HAM10000","textChars":17,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":3,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":3,"text":"The metadata file defines the exact seven output classes. The model cannot predict diseases outside these labels unless new labeled data is added.","textPreview":"The metadata file defines the exact seven output classes. The model cannot predict diseases outside these labels unless new labeled data ...","textChars":146,"textLines":1,"bbox":[64,190,520,96]}
+{"kind":"textbox","id":"sh/obm58z25","slide":3,"text":"akiec","textPreview":"akiec","textChars":5,"textLines":1,"bbox":[72,318,80,26]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":3,"text":"Actinic keratoses","textPreview":"Actinic keratoses","textChars":17,"textLines":1,"bbox":[160,318,360,26]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":3,"text":"bcc","textPreview":"bcc","textChars":3,"textLines":1,"bbox":[72,356,80,26]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":3,"text":"Basal cell carcinoma","textPreview":"Basal cell carcinoma","textChars":20,"textLines":1,"bbox":[160,356,360,26]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":3,"text":"bkl","textPreview":"bkl","textChars":3,"textLines":1,"bbox":[72,394,80,26]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":3,"text":"Benign keratosis-like","textPreview":"Benign keratosis-like","textChars":21,"textLines":1,"bbox":[160,394,360,26]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":3,"text":"df","textPreview":"df","textChars":2,"textLines":1,"bbox":[72,432,80,26]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":3,"text":"Dermatofibroma","textPreview":"Dermatofibroma","textChars":14,"textLines":1,"bbox":[160,432,360,26]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":3,"text":"mel","textPreview":"mel","textChars":3,"textLines":1,"bbox":[72,470,80,26]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":3,"text":"Melanoma","textPreview":"Melanoma","textChars":8,"textLines":1,"bbox":[160,470,360,26]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":3,"text":"nv","textPreview":"nv","textChars":2,"textLines":1,"bbox":[72,508,80,26]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":3,"text":"Melanocytic nevi","textPreview":"Melanocytic nevi","textChars":16,"textLines":1,"bbox":[160,508,360,26]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":3,"text":"vasc","textPreview":"vasc","textChars":4,"textLines":1,"bbox":[72,546,80,26]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":3,"text":"Vascular lesions","textPreview":"Vascular lesions","textChars":16,"textLines":1,"bbox":[160,546,360,26]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":3,"text":"HAM10000 Deep Learning Project | 03","textPreview":"HAM10000 Deep Learning Project | 03","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"chart","id":"ch/jqh0fepk","slide":3,"name":"","chartType":"bar","bbox":[650,218,520,350]}
+{"kind":"notes","id":"nt/2z8dbd","slide":3,"text":""}
+{"kind":"slide","id":"sl/k3ayef","slide":4,"title":"SKIN CANCER DETECTION + XAI","textShapes":21}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":4,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":4,"text":"End-to-end workflow","textPreview":"End-to-end workflow","textChars":19,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":4,"bbox":[54,164,1172,1.5]}
+{"kind":"shape","id":"sh/al87ed8b","slide":4,"bbox":[70,270,145,110]}
+{"kind":"textbox","id":"sh/z61032ls","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[86,286,40,36]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":4,"text":"Dataset","textPreview":"Dataset","textChars":7,"textLines":1,"bbox":[86,330,110,32]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":4,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[224,306,28,50]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":4,"bbox":[260,270,145,110]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[276,286,40,36]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":4,"text":"Preprocess","textPreview":"Preprocess","textChars":10,"textLines":1,"bbox":[276,330,110,32]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":4,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[414,306,28,50]}
+{"kind":"shape","id":"sh/58z25kb6","slide":4,"bbox":[450,270,145,110]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[466,286,40,36]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":4,"text":"Train","textPreview":"Train","textChars":5,"textLines":1,"bbox":[466,330,110,32]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":4,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[604,306,28,50]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":4,"bbox":[640,270,145,110]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[656,286,40,36]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":4,"text":"Evaluate","textPreview":"Evaluate","textChars":8,"textLines":1,"bbox":[656,330,110,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":4,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[794,306,28,50]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":4,"bbox":[830,270,145,110]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":4,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[846,286,40,36]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[846,330,110,32]}
+{"kind":"textbox","id":"sh/d0z61032","slide":4,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[984,306,28,50]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":4,"bbox":[1020,270,145,110]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":4,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1036,286,40,36]}
+{"kind":"textbox","id":"sh/knih4byh","slide":4,"text":"Deploy","textPreview":"Deploy","textChars":6,"textLines":1,"bbox":[1036,330,110,32]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":4,"text":"Every stage is modular: data, models, training, evaluation, utilities, and app code are separated into reusable files.","textPreview":"Every stage is modular: data, models, training, evaluation, utilities, and app code are separated into reusable files.","textChars":118,"textLines":1,"bbox":[124,468,1000,72]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":4,"text":"HAM10000 Deep Learning Project | 04","textPreview":"HAM10000 Deep Learning Project | 04","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"notes","id":"nt/k3ayef","slide":4,"text":""}
+{"kind":"slide","id":"sl/avk0ca","slide":5,"title":"SKIN CANCER DETECTION + XAI","textShapes":5}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":5,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":5,"text":"Preprocessing and augmentation","textPreview":"Preprocessing and augmentation","textChars":30,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":5,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":5,"text":"Training images are transformed to improve robustness.","textPreview":"Training images are transformed to improve robustness.","textChars":54,"textLines":1,"bbox":[486,212,620,44]}
+{"kind":"textbox","id":"sh/9knih4by","slide":5,"text":"- Resize every image to 224 x 224 pixels.\n- Convert image pixels into PyTorch tensors.\n- Normalize with ImageNet mean and standard deviation.\n- Apply random flips, rotations, and color jitter only during training.\n- Keep validation, test, and app inference deterministic.","textPreview":"- Resize every image to 224 x 224 pixels. | - Convert image pixels into PyTorch tensors. | - Normalize with ImageNet mean and standard de...","textChars":271,"textLines":5,"bbox":[514,294,650,230]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":5,"text":"HAM10000 Deep Learning Project | 05","textPreview":"HAM10000 Deep Learning Project | 05","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"image","id":"im/65wjudg7","slide":5,"name":"","alt":"Dermoscopic lesion sample","bbox":[72,214,350,350]}
+{"kind":"notes","id":"nt/avk0ca","slide":5,"text":""}
+{"kind":"slide","id":"sl/wgb6qw","slide":6,"title":"SKIN CANCER DETECTION + XAI","textShapes":7}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":6,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/val87ed8","slide":6,"text":"Model comparison design","textPreview":"Model comparison design","textChars":23,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/6psfil0r","slide":6,"bbox":[54,164,1172,1.5]}
+{"kind":"shape","id":"sh/donyd0z6","slide":6,"bbox":[72,230,500,250]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":6,"text":"EfficientNet-B0","textPreview":"EfficientNet-B0","textChars":15,"textLines":1,"bbox":[104,266,420,44]}
+{"kind":"textbox","id":"sh/vixczed8","slide":6,"text":"- CNN baseline\n- Good accuracy-to-compute balance\n- Pretrained on ImageNet\n- Best practical choice for CPU demo","textPreview":"- CNN baseline | - Good accuracy-to-compute balance | - Pretrained on ImageNet | - Best practical choice for CPU demo","textChars":111,"textLines":4,"bbox":[108,332,390,120]}
+{"kind":"shape","id":"sh/2x4nap4r","slide":6,"bbox":[708,230,500,250]}
+{"kind":"textbox","id":"sh/d0z61032","slide":6,"text":"Vision Transformer","textPreview":"Vision Transformer","textChars":18,"textLines":1,"bbox":[740,266,420,44]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":6,"text":"- Patch-token attention model\n- Learns global image relationships\n- Useful comparison against CNNs\n- Usually slower on CPU","textPreview":"- Patch-token attention model | - Learns global image relationships | - Useful comparison against CNNs | - Usually slower on CPU","textChars":122,"textLines":4,"bbox":[744,332,410,120]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":6,"text":"HAM10000 Deep Learning Project | 06","textPreview":"HAM10000 Deep Learning Project | 06","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"notes","id":"nt/wgb6qw","slide":6,"text":""}
+{"kind":"slide","id":"sl/3kxkrt","slide":7,"title":"SKIN CANCER DETECTION + XAI","textShapes":13}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":7,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":7,"text":"Training setup","textPreview":"Training setup","textChars":14,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/fyxobm58","slide":7,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":7,"text":"224","textPreview":"224","textChars":3,"textLines":1,"bbox":[92,220,250,64]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":7,"text":"Image size","textPreview":"Image size","textChars":10,"textLines":1,"bbox":[92,288,250,34]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":7,"text":"32","textPreview":"32","textChars":2,"textLines":1,"bbox":[346,220,250,64]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":7,"text":"Batch size","textPreview":"Batch size","textChars":10,"textLines":1,"bbox":[346,288,250,34]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":7,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[600,220,250,64]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":7,"text":"Epochs configured","textPreview":"Epochs configured","textChars":17,"textLines":1,"bbox":[600,288,250,34]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[894,220,250,64]}
+{"kind":"textbox","id":"sh/wval87ed","slide":7,"text":"Classes","textPreview":"Classes","textChars":7,"textLines":1,"bbox":[894,288,250,34]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":7,"text":"Training used weighted sampling and weighted cross-entropy to handle the class imbalance visible in HAM10000.","textPreview":"Training used weighted sampling and weighted cross-entropy to handle the class imbalance visible in HAM10000.","textChars":109,"textLines":1,"bbox":[86,438,970,60]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":7,"text":"- AdamW optimizer\n- Cosine learning-rate schedule\n- Early stopping\n- Best checkpoint saved by validation F1","textPreview":"- AdamW optimizer | - Cosine learning-rate schedule | - Early stopping | - Best checkpoint saved by validation F1","textChars":107,"textLines":4,"bbox":[108,526,880,86]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":7,"text":"HAM10000 Deep Learning Project | 07","textPreview":"HAM10000 Deep Learning Project | 07","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"notes","id":"nt/3kxkrt","slide":7,"text":""}
+{"kind":"slide","id":"sl/f74n4c","slide":8,"title":"SKIN CANCER DETECTION + XAI","textShapes":6}
+{"kind":"textbox","id":"sh/61032lsz","slide":8,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":8,"text":"EfficientNet training progress","textPreview":"EfficientNet training progress","textChars":30,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":8,"bbox":[54,164,1172,1.5]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":8,"bbox":[900,246,260,220]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":8,"text":"Best checkpoint","textPreview":"Best checkpoint","textChars":15,"textLines":1,"bbox":[930,278,210,32]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":8,"text":"Epoch 7","textPreview":"Epoch 7","textChars":7,"textLines":1,"bbox":[930,326,210,48]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":8,"text":"Saved as checkpoints/best_efficientnet.pt","textPreview":"Saved as checkpoints/best_efficientnet.pt","textChars":41,"textLines":1,"bbox":[930,392,200,52]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":8,"text":"HAM10000 Deep Learning Project | 08","textPreview":"HAM10000 Deep Learning Project | 08","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"chart","id":"ch/zqtcj6to","slide":8,"name":"","chartType":"line","bbox":[80,218,760,360]}
+{"kind":"notes","id":"nt/f74n4c","slide":8,"text":""}
+{"kind":"slide","id":"sl/xngfm5","slide":9,"title":"SKIN CANCER DETECTION + XAI","textShapes":5}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":9,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":9,"text":"Evaluation results: EfficientNet checkpoint","textPreview":"Evaluation results: EfficientNet checkpoint","textChars":43,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":9,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":9,"text":"Result interpretation","textPreview":"Result interpretation","textChars":21,"textLines":1,"bbox":[860,236,300,34]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":9,"text":"- ROC-AUC is strong, showing useful class separation.\n- Accuracy and F1 are limited because training ran on CPU and stopped early.\n- Recall is high, but precision needs improvement with longer training and tuning.","textPreview":"- ROC-AUC is strong, showing useful class separation. | - Accuracy and F1 are limited because training ran on CPU and stopped early. | - ...","textChars":213,"textLines":3,"bbox":[862,292,330,210]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":9,"text":"HAM10000 Deep Learning Project | 09","textPreview":"HAM10000 Deep Learning Project | 09","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"chart","id":"ch/cfa9w3m9","slide":9,"name":"","chartType":"bar","bbox":[82,224,720,350]}
+{"kind":"notes","id":"nt/xngfm5","slide":9,"text":""}
+{"kind":"slide","id":"sl/csb0e7","slide":10,"title":"SKIN CANCER DETECTION + XAI","textShapes":5}
+{"kind":"textbox","id":"sh/6tovahoz","slide":10,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":10,"text":"Confusion matrix","textPreview":"Confusion matrix","textChars":16,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/ovahoza1","slide":10,"bbox":[54,164,1172,1.5]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":10,"text":"Why this matters","textPreview":"Why this matters","textChars":16,"textLines":1,"bbox":[724,222,360,42]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":10,"text":"- Shows which classes are confused with each other.\n- More informative than accuracy for imbalanced medical data.\n- Helps identify classes that need more samples or stronger augmentation.\n- Supports the comparison between EfficientNet and ViT once both are trained.","textPreview":"- Shows which classes are confused with each other. | - More informative than accuracy for imbalanced medical data. | - Helps identify cl...","textChars":265,"textLines":4,"bbox":[728,298,410,220]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":10,"text":"HAM10000 Deep Learning Project | 10","textPreview":"HAM10000 Deep Learning Project | 10","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"image","id":"im/ytsvu9kn","slide":10,"name":"","alt":"EfficientNet confusion matrix","bbox":[92,196,560,430]}
+{"kind":"notes","id":"nt/csb0e7","slide":10,"text":""}
+{"kind":"slide","id":"sl/2r9ufc","slide":11,"title":"SKIN CANCER DETECTION + XAI","textShapes":8}
+{"kind":"textbox","id":"sh/58z25kb6","slide":11,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":11,"text":"Explainability and web app","textPreview":"Explainability and web app","textChars":26,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":11,"bbox":[54,164,1172,1.5]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":11,"bbox":[486,214,330,330]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":11,"text":"Grad-CAM","textPreview":"Grad-CAM","textChars":8,"textLines":1,"bbox":[532,306,240,36]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":11,"text":"heatmap","textPreview":"heatmap","textChars":7,"textLines":1,"bbox":[532,350,240,34]}
+{"kind":"textbox","id":"sh/cbulwval","slide":11,"text":"Generated at inference time","textPreview":"Generated at inference time","textChars":27,"textLines":1,"bbox":[532,408,240,30]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":11,"text":"Streamlit app output","textPreview":"Streamlit app output","textChars":20,"textLines":1,"bbox":[880,224,300,38]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":11,"text":"- Upload lesion image\n- View predicted class\n- View confidence score\n- Inspect Grad-CAM overlay\n- Read short explanation","textPreview":"- Upload lesion image | - View predicted class | - View confidence score | - Inspect Grad-CAM overlay | - Read short explanation","textChars":120,"textLines":5,"bbox":[894,292,300,190]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":11,"text":"HAM10000 Deep Learning Project | 11","textPreview":"HAM10000 Deep Learning Project | 11","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"image","id":"im/hoza1gvy","slide":11,"name":"","alt":"Uploaded lesion example","bbox":[86,214,330,330]}
+{"kind":"notes","id":"nt/2r9ufc","slide":11,"text":""}
+{"kind":"slide","id":"sl/nx0vgc","slide":12,"title":"SKIN CANCER DETECTION + XAI","textShapes":8}
+{"kind":"textbox","id":"sh/4byhgn29","slide":12,"text":"SKIN CANCER DETECTION + XAI","textPreview":"SKIN CANCER DETECTION + XAI","textChars":27,"textLines":1,"bbox":[54,36,430,30]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":12,"text":"Limitations and next steps","textPreview":"Limitations and next steps","textChars":26,"textLines":1,"bbox":[54,82,920,72]}
+{"kind":"shape","id":"sh/m58z25kb","slide":12,"bbox":[54,164,1172,1.5]}
+{"kind":"shape","id":"sh/t83itgfm","slide":12,"bbox":[78,228,500,292]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":12,"text":"Current limitations","textPreview":"Current limitations","textChars":19,"textLines":1,"bbox":[108,262,380,36]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":12,"text":"- Not a medical diagnostic device\n- HAM10000 is class-imbalanced\n- CPU training limits final accuracy\n- Grad-CAM explains influence, not correctness","textPreview":"- Not a medical diagnostic device | - HAM10000 is class-imbalanced | - CPU training limits final accuracy | - Grad-CAM explains influence...","textChars":148,"textLines":4,"bbox":[112,322,400,148]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":12,"bbox":[704,228,500,292]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":12,"text":"Recommended improvements","textPreview":"Recommended improvements","textChars":24,"textLines":1,"bbox":[734,262,410,36]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":12,"text":"- Train longer with GPU support\n- Tune augmentation and class weights\n- Complete ViT comparison\n- Add external validation data","textPreview":"- Train longer with GPU support | - Tune augmentation and class weights | - Complete ViT comparison | - Add external validation data","textChars":126,"textLines":4,"bbox":[738,322,400,148]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":12,"text":"The application already demonstrates a complete research-to-app workflow.","textPreview":"The application already demonstrates a complete research-to-app workflow.","textChars":73,"textLines":1,"bbox":[120,578,1040,42]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":12,"text":"HAM10000 Deep Learning Project | 12","textPreview":"HAM10000 Deep Learning Project | 12","textChars":35,"textLines":1,"bbox":[54,666,500,24]}
+{"kind":"notes","id":"nt/nx0vgc","slide":12,"text":""}
+{"kind":"slide","id":"sl/toruha","slide":13,"title":"Thank you","textShapes":4}
+{"kind":"textbox","id":"sh/72x4nap4","slide":13,"text":"Thank you","textPreview":"Thank you","textChars":9,"textLines":1,"bbox":[80,170,760,90]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":13,"text":"Skin Cancer Detection Using Deep Learning and Explainable AI","textPreview":"Skin Cancer Detection Using Deep Learning and Explainable AI","textChars":60,"textLines":1,"bbox":[84,282,890,44]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":13,"text":"Demo: streamlit run app/streamlit_app.py","textPreview":"Demo: streamlit run app/streamlit_app.py","textChars":40,"textLines":1,"bbox":[86,410,720,40]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":13,"text":"Checkpoint: checkpoints/best_efficientnet.pt","textPreview":"Checkpoint: checkpoints/best_efficientnet.pt","textChars":44,"textLines":1,"bbox":[86,462,720,34]}
+{"kind":"notes","id":"nt/toruha","slide":13,"text":""}

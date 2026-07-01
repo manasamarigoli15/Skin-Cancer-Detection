@@ -1,0 +1,61 @@
+﻿project:
+  name: skin-cancer-xai
+  seed: 42
+  device: auto
+
+data:
+  root_dir: data/raw
+  metadata_csv: data/raw/HAM10000_metadata.csv
+  image_dirs:
+    - data/raw/HAM10000_images_part_1
+    - data/raw/HAM10000_images_part_2
+    - data/raw/images
+  image_size: 224
+  val_size: 0.15
+  test_size: 0.15
+  num_workers: 4
+  batch_size: 32
+  class_names:
+    - akiec
+    - bcc
+    - bkl
+    - df
+    - mel
+    - nv
+    - vasc
+  class_descriptions:
+    akiec: Actinic keratoses and intraepithelial carcinoma
+    bcc: Basal cell carcinoma
+    bkl: Benign keratosis-like lesions
+    df: Dermatofibroma
+    mel: Melanoma
+    nv: Melanocytic nevi
+    vasc: Vascular lesions
+
+training:
+  epochs: 15
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  label_smoothing: 0.05
+  use_weighted_loss: true
+  mixed_precision: true
+  early_stopping_patience: 5
+  checkpoint_dir: checkpoints
+
+models:
+  efficientnet:
+    name: efficientnet_b0
+    pretrained: true
+  vit:
+    name: vit_tiny_patch16_224.augreg_in21k_ft_in1k
+    pretrained: true
+
+evaluation:
+  output_dir: reports
+  threshold_average: macro
+
+app:
+  checkpoint_path: checkpoints/best_efficientnet.pt
+  default_model: efficientnet
+
+
