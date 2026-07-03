@@ -5,7 +5,7 @@ End-to-end PyTorch project for classifying dermoscopic skin lesion images from t
 This software is for research and education only. It is not a medical device and must not be used as a substitute for professional clinical diagnosis.
 
 ## Demo Video 
-[Derma Vision AI](https://drive.google.com/file/d/16Gohn8iNKkTA3zEZktclLExaFB8XuR8y/view?usp=drive_link)
+[Derma Vision AI](https://drive.google.com/file/d/1a4QKW4kI6FzGCJHnTSG-Im2IC0CeHvwO/view?usp=sharing)
 
 ## Dataset
 
